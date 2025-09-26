@@ -45,7 +45,7 @@ export default function TestPage() {
         const formData = new FormData();
         formData.append("file", file);
 
-        fetch("http://localhost:3000/upload", {
+        fetch("https://wispr-backend.onrender.com/upload", {
             method: "POST",
             body: formData,
         })
