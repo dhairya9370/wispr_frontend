@@ -1,0 +1,10 @@
+.containner{
+    display :flex;
+    flex-direction: column;
+}
+.received{
+    align-self: flex-start;
+}
+.sent{
+    align-self: flex-end;
+}

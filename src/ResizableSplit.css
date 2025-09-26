@@ -1,0 +1,31 @@
+.split-container {
+  display: flex;
+  height: 100%;
+  width: 100%;
+  overflow: hidden;
+  -webkit-touch-callout: none;
+  -webkit-user-select: none;
+  -khtml-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+
+}
+.split-left {
+  overflow: auto;
+}
+.split-resizer{
+    width: 10px;
+    background: #dedede;
+    cursor: ew-resize;
+    user-select: none;
+    resize: horizontal;
+    border-top:solid 1px rgb(234, 234, 234);
+}
+.split-right {
+  width:100%;
+  flex: 1;
+  background: #ffffff;
+  overflow: auto;
+  /* min-width: 500px; */
+}
