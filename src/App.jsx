@@ -2,6 +2,7 @@ import {
   BrowserRouter as Router,
   Routes,
   Route,
+  Navigate,
 } from "react-router-dom";
 import ChatsPage from './ChatsPage';
 import LoginPage from "./LoginPage";
@@ -58,7 +59,8 @@ function App() {
               user={user} />
             }
           />
-          <Route path="/test" element={<TestPage />} />
+          {/* <Route path="/test" element={<TestPage />} /> */}
+          <Route path="*" element={<Navigate to="/login" replace />} />
         </Routes>
       </SocketProvider>
     </Router>
